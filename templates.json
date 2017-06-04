@@ -85,6 +85,24 @@
     "volumes": ["/var/lib/mysql"]
   },
   {
+    "title": "Percona",
+    "description": "Performance beyond MySQL",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://www.percona.com/sites/all/themes/percona2015/logo.png",
+    "image": "percona:latest",
+    "env": [
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Root password"
+      }
+    ],
+    "ports": [
+      "3306/tcp"
+    ],
+    "volumes": ["/var/lib/mysql"]
+  },
+  {
     "title": "PostgreSQL",
     "description": "The most advanced open-source database",
     "categories": ["database"],
